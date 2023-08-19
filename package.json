@@ -2,13 +2,7 @@
   "name": "fityfy",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/api": {
-      "target": "https://fitquestbackend-v3g1.onrender.com",
-      "changeOrigin": true
-    }
-  }
-,  
+  "proxy":"http://localhost:8000",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -27,6 +21,7 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
+    "vercel-build": "npm install --legacy-peer-deps && vercel build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
